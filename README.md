@@ -38,7 +38,9 @@
 ### Step 12: 
   Stop
 # Program:
+
 #include <stdio.h>
+
 void swapv(int x, int y)
 {
     int temp;
@@ -119,7 +121,9 @@ int main()
 ### Step 10:
   Stop
 # Program:
+
 #include <stdio.h>
+
 int fibo(int x)
 {
     if (x == 0 || x == 1)
@@ -188,6 +192,7 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 12:
   Stop
 # Program:
+
 #include <stdio.h>
 
 void printEvenOdd(int cur, int limit)
@@ -262,7 +267,9 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 11:
   Stop
 # Program:
+
 #include <stdio.h>
+
 #include <stdlib.h>
 
 int main()
@@ -270,6 +277,7 @@ int main()
     int *ptr, n, i, sum = 0;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
+    
     ptr = (int *)calloc(n, sizeof(int));
     if (ptr == NULL)
     {
@@ -277,6 +285,7 @@ int main()
         return 1;
     }
     printf("Enter %d integers:\n", n);
+    
     for (i = 0; i < n; i++)
     {
         scanf("%d", &ptr[i]);
@@ -329,19 +338,25 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 10:
   Stop
 # Program:
+
 #include <stdio.h>
+
 void displayArray(int *arr, int size);
+
 int main()
 {
     int arr[5], i;
     printf("Enter 5 integers:\n");
+    
     for (i = 0; i < 5; i++)
     {
         scanf("%d", &arr[i]);
     }
+    
     displayArray(arr, 5);
     return 0;
 }
+
 void displayArray(int *arr, int size)
 {
     int i;
